@@ -47,3 +47,6 @@ startxfce4 &" >> ~/.vnc/xstartup
 sudo chmod +x ~/.vnc/xstartup
 vncserver
 ```
+
+#### Count no.of files in current dir
+`ls -1 | wc -l`
