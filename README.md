@@ -3,11 +3,12 @@
 #### Command to match and delete duplicate files
 `find . -name '*(*).pdf' #-delete`
 
-#### Upload a dir to s3 
+#### Upload/Download (Copy) a dir to/from s3 
 ```
 sudo apt  install awscli
 aws configure
-aws s3 cp SOURCE_DIR s3://DEST_BUCKET/ --recursive
+aws s3 cp SOURCE_DIR s3://DEST_BUCKET/BUCKET_DIR/ --recursive #upload
+aws s3 cp s3://DEST_BUCKET/BUCKET_DIR/ SOURCE_DIR --recursive #download
 ```
 
 #### Install Google Chrome
