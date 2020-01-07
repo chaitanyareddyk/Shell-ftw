@@ -50,3 +50,11 @@ vncserver
 
 #### Count no.of files in current dir
 `ls -1 | wc -l`
+
+#### Using tmux
+```
+tmux
+Ctrl+B then d
+tmux ls
+tmux attach-session -t sess_no
+```
