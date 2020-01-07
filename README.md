@@ -60,6 +60,8 @@ tmux attach-session -t sess_no
 ```
 
 #### Install tesseract and imagemagick
+```
 sudo apt install -y tesseract-ocr
 sudo apt install -y imagemagick
 sudo mv /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xmlout
+```
