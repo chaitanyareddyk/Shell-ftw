@@ -2,4 +2,4 @@
 
 Command to match and delete duplicate files
 ------
-find . -name '*(*).pdf' #-delete
+`find . -name '*(*).pdf' #-delete`
