@@ -6,6 +6,7 @@
 #### Upload/Download (Copy) a dir to/from s3 
 ```
 sudo apt  install awscli
+pip3 install s3transfer
 aws configure
 aws s3 cp SOURCE_DIR s3://DEST_BUCKET/BUCKET_DIR/ --recursive #upload
 aws s3 cp s3://DEST_BUCKET/BUCKET_DIR/ SOURCE_DIR --recursive #download
