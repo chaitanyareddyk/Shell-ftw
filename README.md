@@ -80,3 +80,9 @@ sudo mv /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xmlout
 ```
 split -l 2900 --numeric-suffixes --additional-suffix=.ext inputFileName.Ext OutputFileNamePrefix
 ```
+
+#### Copy files from multiple sub directories to single directory
+
+```
+find srcFolder/ -type f -print0 | xargs -0 cp -t destFolder/
+```
