@@ -86,3 +86,9 @@ split -l 2900 --numeric-suffixes --additional-suffix=.ext inputFileName.Ext Outp
 ```
 find srcFolder/ -type f -print0 | xargs -0 cp -t destFolder/
 ```
+
+#### Split a large folder contents into multiple subfolders
+
+```
+for f in *;  do      d=part_$(printf %03d $((i/500+1)));      mkdir -p $d;      mv "$f" $d;      let i++;  done
+```
